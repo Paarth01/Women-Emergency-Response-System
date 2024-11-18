@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #d62f3c;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Centering Content */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1.page {
+    font-size: 2rem;
+    color: #ff5f6d;
+    margin-bottom: 10px;
+}
+
+p.page {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: #ff5f6d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #ff3b4f;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer link styling */
+footer p {
+    margin: 10px 0; /* Space between paragraphs */
+    font-size: 16px;
+}
+
+footer p a {
+    display: inline-block;
+    color: #ffcc00; /* Accent color for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px; /* Space between each link */
+}
+
+footer p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer p a:visited {
+    color: #ff9900; /* Different color for visited links */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cta-button {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

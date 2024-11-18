@@ -1,0 +1,212 @@
+/* styles.css */
+
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS Variables for Easy Theming */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #FFFFFF;
+    --background-color: #f5f5f5;
+    --header-background: #ffffff;
+    --footer-background: #333333;
+    --text-color: #333333;
+    --link-color: #4A90E2;
+    --link-hover-color: #357ABD;
+    --button-background: #4A90E2;
+    --button-color: #ffffff;
+    --button-hover-background: #357ABD;
+    --status-active: #28a745;
+    --status-silent: #ffc107;
+    --status-vibration: #17a2b8;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #d62f3c;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    background-color: var(--secondary-color);
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.status.active {
+    background-color: var(--status-active);
+}
+
+.status.silent {
+    background-color: var(--status-silent);
+}
+
+.status.vibration {
+    background-color: var(--status-vibration);
+}
+
+button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--button-background);
+    color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-background);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer link styling */
+footer p {
+    margin: 10px 0; /* Space between paragraphs */
+    font-size: 16px;
+}
+
+footer p a {
+    display: inline-block;
+    color: #ffcc00; /* Accent color for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px; /* Space between each link */
+}
+
+footer p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer p a:visited {
+    color: #ff9900; /* Different color for visited links */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .contact-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        width: 100%;
+    }
+}

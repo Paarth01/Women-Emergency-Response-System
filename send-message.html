@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Message</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <img src="logo-transparent-png.png" alt="App Logo" style="height: 125px; margin-right: 15px;"></img>
+        <div>
+        <h1>Women Safety App</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="send-message.html">Send Message</a></li>
+                <li><a href="contact-list.html">Contact List</a></li>
+                <li><a href="safety.html">Safety</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <h1 class="page">Send Message to Guardians</h1>
+    <form id="messageForm" class="page">
+        <label for="guardians">Select Guardians:</label>
+        <select id="guardians" multiple>
+            <option value="guardian1@example.com">Guardian 1</option>
+            <option value="guardian2@example.com">Guardian 2</option>
+            <option value="guardian3@example.com">Guardian 3</option>
+        </select>
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <body>
+        <div class="content">
+            <!-- Page content goes here -->
+        </div>
+        <footer>
+            <p>Contact us at: info@womensafety.com</p>
+            <p>Follow us on 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">Facebook</a>
+            </p>
+        </footer>
+    </body>
+
+    <script src="script.js"></script>
+</body>
+</html>

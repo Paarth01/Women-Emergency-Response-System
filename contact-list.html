@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <header>
+        <img src="logo-transparent-png.png" alt="App Logo" style="height: 125px; margin-right: 15px;"></img>
+        <div>
+        <h1>Women Safety App</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="send-message.html">Send Message</a></li>
+                <li><a href="contact-list.html">Contact List</a></li>
+                <li><a href="safety.html">Safety</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    
+
+    <main>
+        <h1 class="page-title">Guardian Contact List</h1>
+        <ul id="contactList" class="contact-list">
+            <li>Guardian 1 -> 9877363532 -> <span class="status active">Active</span></li>
+            <li>Guardian 2 -> 7263276673 -> <span class="status silent">Silent</span></li>
+            <li>Guardian 3 -> 8266267117 -> <span class="status vibration">Vibration</span></li>
+        </ul>
+        <button onclick="addGuardian()">Add Guardian</button>
+    </main>
+
+    <div class="content">
+        <!-- Page content goes here -->
+    </div>
+    <footer>
+        <p>Contact us at: info@womensafety.com</p>
+        <p>Follow us on 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

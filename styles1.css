@@ -1,0 +1,148 @@
+/* General reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.page {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #d62f3c;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header styling */
+h1.page {
+    text-align: center;
+    font-size: 24px;
+    color: #5c67f2;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styling */
+#messageForm label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #333;
+}
+
+#messageForm select,
+#messageForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#messageForm select:focus,
+#messageForm textarea:focus {
+    border-color: #5c67f2;
+    box-shadow: 0 0 8px rgba(92, 103, 242, 0.2);
+    outline: none;
+}
+
+/* Button styling */
+#messageForm button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5c67f2;
+    border: none;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#messageForm button:hover {
+    background-color: #4a54d1;
+}
+
+#messageForm button:active {
+    transform: scale(0.98);
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer link styling */
+footer p {
+    margin: 10px 0; /* Space between paragraphs */
+    font-size: 16px;
+}
+
+footer p a {
+    display: inline-block;
+    color: #ffcc00; /* Accent color for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px; /* Space between each link */
+}
+
+footer p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer p a:visited {
+    color: #ff9900; /* Different color for visited links */
+}
